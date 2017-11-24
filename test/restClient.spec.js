@@ -27,6 +27,7 @@ function setupClient(options = {}) {
     find: sinon.stub().returns(Promise.resolve(findResult)),
     get: sinon.stub().returns(Promise.resolve(getResult)),
     update: sinon.stub().returns(Promise.resolve(updateResult)),
+    patch: sinon.stub().returns(Promise.resolve(updateResult)),
     create: sinon.stub().returns(Promise.resolve(createResult)),
     remove: sinon.stub().returns(Promise.resolve(removeResult)),
   };
